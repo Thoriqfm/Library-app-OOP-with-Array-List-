@@ -94,8 +94,8 @@ Main.java
 
 - Mengkoordinasikan flow aplikasi
 
-**🔄 Alur Eksekusi Detail
-**
+**🔄 Alur Eksekusi Detail**
+
 **Phase 1: Initialization**
 
 1. Main membuat BukuRepository (data storage)
@@ -123,4 +123,5 @@ Main.java
 10. BukuRepository melakukan filtering dan return results
 
 11. BukuService memformat dan menampilkan data
+
 
