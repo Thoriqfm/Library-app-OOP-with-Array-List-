@@ -1,8 +1,8 @@
-📚 Koleksi Buku Perpustakaan - Clean Architecture Implementation
+**📚 Koleksi Buku Perpustakaan - Clean Architecture Implementation**
 
 Sebuah aplikasi manajemen buku perpustakaan yang mengimplementasikan Clean Architecture dengan pemisahan layer yang jelas menggunakan Java.
 
-🏗️ Struktur Arsitektur
+**🏗️ Struktur Arsitektur**
 
 src/
 
@@ -22,7 +22,7 @@ src/
 
 └── 📄 Main.java          # Presentation Layer
 
-📋 Diagram Alur Data
+**📋 Diagram Alur Data**
 
 Main (Presentation)
         ↓
@@ -32,9 +32,9 @@ BukuRepository (Data Access)
         ↓
 Entities (Domain Models)
 
-🎯 Penjelasan Per Layer
+**🎯 Penjelasan Per Layer**
 
-1. 🎪 Domain Layer (entities/)
+**1. 🎪 Domain Layer (entities/)**
 
 Layer inti yang berisi business objects dan aturan domain.
 
@@ -52,7 +52,7 @@ Buku.java
 
 - Menyediakan akses terkontrol melalui getter methods
 
-2. 💾 Data Access Layer (repository/)
+**2. 💾 Data Access Layer (repository/)**
    
 Layer yang bertanggung jawab untuk penyimpanan dan pengambilan data.
 
@@ -66,7 +66,7 @@ BukuRepository.java
 
 - Menyediakan query methods berdasarkan kategori
 
-3. 🎯 Business Logic Layer (services/)
+**3. 🎯 Business Logic Layer (services/)**
    
 Layer yang berisi use cases dan business rules aplikasi.
 
@@ -80,7 +80,7 @@ BukuService.java
 
 - Menangani presentation logic
 
-4. 🎨 Presentation Layer (Main.java)
+**4. 🎨 Presentation Layer (Main.java)**
    
 Layer yang berinteraksi dengan user dan mengkoordinasikan aplikasi.
 
@@ -94,9 +94,9 @@ Main.java
 
 - Mengkoordinasikan flow aplikasi
 
-🔄 Alur Eksekusi Detail
-
-Phase 1: Initialization
+**🔄 Alur Eksekusi Detail
+**
+**Phase 1: Initialization**
 
 1. Main membuat BukuRepository (data storage)
 
@@ -104,7 +104,7 @@ Phase 1: Initialization
 
 3. Main membuat objek Kategori (domain objects)
 
-Phase 2: Data Processing
+**Phase 2: Data Processing**
 
 4. Main memanggil service untuk menambah buku
 
@@ -114,7 +114,7 @@ Phase 2: Data Processing
 
 7. BukuRepository menyimpan buku ke ArrayList
 
-Phase 3: Data Retrieval & Presentation
+**Phase 3: Data Retrieval & Presentation**
 
 8. Main meminta service untuk menampilkan data
 
@@ -123,3 +123,4 @@ Phase 3: Data Retrieval & Presentation
 10. BukuRepository melakukan filtering dan return results
 
 11. BukuService memformat dan menampilkan data
+
